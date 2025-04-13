@@ -1,0 +1,11 @@
+header nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 15px;
+}
+nav{
+   text-align: right;
+}
+header {
+  padding: 10px;
+  text-align: left;
