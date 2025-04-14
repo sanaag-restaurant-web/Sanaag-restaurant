@@ -9,3 +9,73 @@ nav{
 header {
   padding: 10px;
   text-align: left;
+}
+
+
+
+
+
+
+
+.menu-container {
+  text-align: center;
+  height: 20px;
+  padding: 100px;
+  width: 900px; /* Yaraynta ballaca guud ee container-ka */
+  margin: 0 auto; /* Si loo dheelitiro bartamaha */
+ 
+}
+
+.menu-container h1 {
+  color: #ff6600;
+  font-size: 28px; /* Wax yar weynaynaya cinwaanka */
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Menu Styles */
+.menu {
+  display: flex;
+  justify-content: space-between; /* Kala fogeeya qaybaha menu-ga */
+  gap: 20px;
+  
+}
+
+.menu-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1; /* Si loo hubiyo in qaybaha ay isku cabbir yihiin */
+  border: 1px solid #ec5a36;
+}
+
+.menu-section h2 {
+  color: #ff6600;
+  border-bottom: 2px solid #ff6600; /* Xariiq ku hoos yaal cinwaanka */
+  padding-bottom: 5px; /* Meel bannaan oo ka hooseysa cinwaanka */
+}
+
+.menu-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-section li {
+  display: flex;
+  justify-content: space-between; /* Kala fogeeya magaca iyo qiimaha */
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd; /* Xariiq u dhaxeeya walxaha liiska */
+  padding-bottom: 5px; /* Meel bannaan ka hor xariiqda */
+}
+
+.menu-section li:last-child {
+  border-bottom: none; /* Ka saar xariiqda walxaha ugu dambeeya */
+}
+
+.menu-section li span {
+  font-size: 16px;
+}
