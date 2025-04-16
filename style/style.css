@@ -11,6 +11,51 @@ header {
   text-align: left;
 }
 
+.hero {
+  position: relative;
+  height: 100%; 
+  background-image: url('../images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg'); /* adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  color: white;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: left;
+}
+
+.welcome h1 {
+  font-size: 5rem;
+}
+
+.welcome p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+
+.welcome button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.welcome button:hover {
+  background-color: #ff6600;
+}
+
+
 
 
 section {
