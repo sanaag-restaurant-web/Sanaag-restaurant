@@ -22,6 +22,12 @@ nav{
   gap: 1rem;
 }
 
+nav a.active {
+  color: #f24f09;
+  font-weight: bold;
+  border-bottom: 2px solid #f24f09;
+  padding-bottom: 3px;
+}
 
 .hero {
   position: relative;
@@ -226,6 +232,62 @@ margin-right: 0;
   font-size: 1em;
   white-space: nowrap;
 }
+
+.story {
+  background-color: #f9f9fb;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.story-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.story-image {
+  flex: 1 1 400px;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.story-text {
+  flex: 1 1 400px;
+  background-color: white;
+  border: 2px solid #f5f2f0;
+  border-radius: 10px;
+  padding: 0.5rem;
+ 
+}
+
+.story-text h2 {
+  color: #f24f09;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.story-text p {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align:justify;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  margin: 1rem;
+}
+
+
+
 
 .visit {
   padding: 40px 20px;
