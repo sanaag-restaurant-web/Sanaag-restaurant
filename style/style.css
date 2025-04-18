@@ -137,65 +137,152 @@ section {
 
 
 
+
 .menu-container {
   text-align: center;
-  height: 20px;
-  padding: 100px;
-  width: 900px; /* Yaraynta ballaca guud ee container-ka */
-  margin: 0 auto; /* Si loo dheelitiro bartamaha */
- 
-}
-
-.menu-container h1 {
-  color: #ff6600;
-  font-size: 28px; /* Wax yar weynaynaya cinwaanka */
-}
-
-p {
-  color: #666;
-  margin-bottom: 20px;
-}
-
-/* Menu Styles */
-.menu {
-  display: flex;
-  justify-content: space-between; /* Kala fogeeya qaybaha menu-ga */
-  gap: 20px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
   
 }
 
+.menu-container h1 {
+  font-size: 2.5em;
+  color: #f97316; 
+  margin-bottom: 10px;
+}
+
+.menu-container .subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
 .menu-section {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   padding: 20px;
-  flex: 1; /* Si loo hubiyo in qaybaha ay isku cabbir yihiin */
+  width: 300px;
+  text-align: left;
   border: 1px solid #ec5a36;
 }
 
 .menu-section h2 {
-  color: #ff6600;
-  border-bottom: 2px solid #ff6600; /* Xariiq ku hoos yaal cinwaanka */
-  padding-bottom: 5px; /* Meel bannaan oo ka hooseysa cinwaanka */
+  color: #f97316;
+  margin-bottom: 20px;
 }
 
 .menu-section ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu-section li {
+display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
+border-bottom: 1px solid #ddd; 
+padding-bottom: 5px; 
+}
+
+
+.item-text {
+max-width: 200px;
+margin-right: 4px; 
+line-height: 1.3;
+}
+.item-text {
+margin-right: 0;
+}
+
+
+.item-name {
+  font-weight: bold;
+  display: block;
+  color: #333;
+  font-size: 1.05em; 
+}
+
+.item-desc {
+  font-size: 0.85em;
+  color: #777;
+  margin-top: 0.2em;
+  line-height: 1.2;
+}
+
+.price {
+  color: #f97316;
+  font-weight: bold;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+.visit {
+  padding: 40px 20px;
+  background: #fff5e5;
+}
+.visit h2{
+  text-align: center;
+  color: #ff6600;
+}
+.visit .box-container {
   display: flex;
-  justify-content: space-between; /* Kala fogeeya magaca iyo qiimaha */
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd; /* Xariiq u dhaxeeya walxaha liiska */
-  padding-bottom: 5px; /* Meel bannaan ka hor xariiqda */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.visit .box {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 0px solid #ff6600;
+}
+footer {
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav a:hover{
+  color: #f97316;
+  text-decoration: underline;
+}
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
 }
 
-.menu-section li:last-child {
-  border-bottom: none; /* Ka saar xariiqda walxaha ugu dambeeya */
-}
+@media (max-width: 480px) {
+  .welcome h1 {
+    font-size: 2rem;
+  }
 
-.menu-section li span {
-  font-size: 16px;
+  .welcome button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .dishes {
+    width: 100%;
+  }
+
+  .menu-container h1 {
+    font-size: 1.5rem;
+  }
 }
