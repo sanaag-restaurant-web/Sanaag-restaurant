@@ -1,156 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu - Sanag Restaurant</title>
-    <link rel="stylesheet" href="style/style.css">
-  
-</head>
-<body>
-  <header>
-    <h3>Sanag Restaurant</h3>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Menu.html"class="active">Menu</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-  </header>
- 
 
-  <section class="menu">
-    <div class="menu-container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sanag Restaurant</title>
+  <link rel="stylesheet" href="style/menu.css">
+</head>
+
+<body>
+
+  <header class="NAV">
+    <div class="nav-cont">
+      <div class="logo">Sanag Restaurant</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <section class="menu-section">
+    <div class="menu-title">
       <h1>Our Menu</h1>
       <p class="subtitle">Discover our authentic Somali dishes</p>
-      <div class="menu">
-       
-        <div class="menu-section">
-          <h2>Main Dishes</h2>
-          <ul>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Hilib Ari</span>
-                <p class="item-desc">Tender goat meat served with spiced rice</p>
-              </div>
-              <span class="price">$15.99</span>
-            </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Bariis iyo Hilib</span>
-                <p class="item-desc">Somali-style rice with braised beef</p>
-              </div>
-              <span class="price">$14.99</span>
-            </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Suqaar</span>
-                <p class="item-desc">Diced meat sautéed with vegetables</p>
-              </div>
-              <span class="price">$13.99</span>
-            </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Sabaayad</span>
-                <p class="item-desc">Flatbread served with curry sauce</p>
-              </div>
-              <span class="price">$11.99</span>
-            </li>
-          </ul>
+    </div>
+
+    <div class="menu-columns">
+      <div class="menu-column">
+        <h2>Main Dishes</h2>
+        <div class="menu-item">
+          <img src="./images/hilib ari.jpg" alt="Hilib Ari">
+          <h3>Hilib Ari</h3>
+          <p>Tender goat meat served with spiced rice</p>
+          <span class="price">$15.99</span>
         </div>
-  
-       
-        <div class="menu-section">
-          <h2>Appetizers</h2>
-          <ul>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Sambusa</span>
-                <p class="item-desc">Crispy pastry filled with spiced meat</p>
-              </div>
-              <span class="price">$2.99</span>
-            </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Bajiye</span>
-                <p class="item-desc">Bean fritters with green chilies</p>
-              </div>
-              <span class="price">$4.99</span>
-            </li>
-            <li>
-                <div class="item-text">
-                  <span class="item-name">MashMash</span>
-                  <p class="item-desc">Flatbread served with curry sauce</p>
-                </div>
-                <span class="price">$5.99</span>
-              </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Malawah</span>
-                <p class="item-desc">Sweet pancake-like bread</p>
-              </div>
-              <span class="price">$3.99</span>
-            </li>
-          </ul>
+
+        <div class="menu-item">
+          <img src="./images/suqaar.jpg" alt="Suqaar">
+          <h3>Suqaar</h3>
+          <p>Diced meat sautéed with vegetables</p>
+          <span class="price">$13.99</span>
         </div>
-  
-       
-        <div class="menu-section">
-          <h2>Drinks</h2>
-          <ul>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Shaah</span>
-                <p class="item-desc">Somali spiced tea</p>
-              </div>
-              <span class="price">$2.99</span>
-            </li>
-                 <li>
-              <div class="item-text">
-                <span class="item-name">milkSheke</span>
-                <p class="item-desc">Fresh milkSheke juice</p>
-              </div>
-              <span class="price">$3.99</span>
-            </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Qaxwo</span>
-                <p class="item-desc">Traditional Somali coffee</p>
-              </div>
-              <span class="price">$2.99</span>
-            </li>
-            <li>
-              <div class="item-text">
-                <span class="item-name">Mango Juice</span>
-                <p class="item-desc">Fresh mango juice</p>
-              </div>
-              <span class="price">$3.99</span>
-            </li>
-          </ul>
+      </div>
+
+
+      <div class="menu-column">
+        <h2>Appetizers</h2>
+        <div class="menu-item">
+          <img src="./images/sambuus.jpg" alt="Sambusa">
+          <h3>Sambusa</h3>
+          <p>Crispy pastry filled with spiced meat</p>
+          <span class="price">$2.99</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="./images/baajiye.jpg" alt="Bajiye">
+          <h3>Bajiye</h3>
+          <p>Bean fritters with green chilies</p>
+          <span class="price">$4.99</span>
+        </div>
+      </div>
+
+
+      <div class="menu-column">
+        <h2>Drinks</h2>
+        <div class="menu-item">
+          <img src="./images/shaah.jpg" alt="Shaah">
+          <h3>Shaah</h3>
+          <p>Somali spiced tea</p>
+          <span class="price">$2.99</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="./images/mango.jpg" alt="Mango Juice">
+          <h3>Mango Juice</h3>
+          <p>Fresh mango juice</p>
+          <span class="price">$3.99</span>
         </div>
       </div>
     </div>
   </section>
-
-
-<footer>
-    <div>
-        <strong>Sanaq Restaurant</strong><br>
-        Authentic Somali Cuisine in Minnesota
-    </div>
-    <div>
-        <strong>Quick Links</strong>
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <div>
-        <strong>Follow Us</strong>
-        <p>Facebook | Instagram</p>
-    </div>
-</footer>
-    
-    
 </body>
+
 </html>
