@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #333;
+}
+
+
+.NAV {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-cont {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: #f97316;
+  }
+  
+
+  .menu-title {
+    text-align: center;
+    margin: 2rem 0 1rem;
+  }
+  
+  .menu-title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff6600;
+  }
+  
+  .subtitle {
+    color: #555;
+  }
+  
+
+  .menu-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .menu-column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .menu-column h2 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  .menu-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-8px);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .menu-item h3 {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: #000000;
+  }
+  
+  .menu-item p {
+    margin: 0.5rem 1rem;
+    color: #555;
+  }
+  
+  .price {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #ff6600;
+  }
+
+  @media (max-width: 768px) {
+    .menu-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .menu-column {
+      min-width: 100%;
+      margin-bottom: 20px;
+    
+    }
+  }
+  
