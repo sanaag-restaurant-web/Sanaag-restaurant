@@ -12,14 +12,17 @@ header {
   
 }
 
-header h1 {
+header h3 {
   font-size: 1.5rem;
+  margin-left: 40px; 
+
 }
 
 header nav a {
   color: black;
   text-decoration: none;
   margin-left: 15px;
+  margin-right: 7px;
 }
 nav{
   display: flex;
@@ -37,13 +40,20 @@ nav a.active {
 
 .hero {
   position: relative;
-  height: 30%; 
-  background-image: url('../images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg'); 
+  height: 70vh; /* corrected from '70vb' to '70vh' */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('../images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 99%;
+  margin-top: -15px;
+
+
 }
 
 .welcome {
@@ -56,16 +66,15 @@ nav a.active {
 
 .welcome h1 {
   font-size: 5rem;
-  margin-bottom: 0.5rem;
+  margin-top: -40px;
 }
 
 .welcome p {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: white;
-  margin-bottom: 0.75rem;
+  margin-top: -60px;
  
 }
-
 
 .welcome button {
   background-color: #ff6600;
@@ -348,7 +357,7 @@ margin-right: 0;
 footer {
   background: #1f2937;
   color: white;
-  padding: 20px;
+  padding: 40px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -361,8 +370,41 @@ footer a {
   color: #ccc;
   text-decoration: none;
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
+  word-spacing: 2px; 
+  letter-spacing: 0.5px; 
+  line-height: 1.2;
 }
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #ffffff33; 
+  margin-bottom: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+  font-size: 0.9rem; /
+}
+
+.footer-brand strong {
+  font-size: 1.2rem; 
+  font-weight: 600;
+}
+
 
 @media (max-width: 480px) {
   .welcome h1 {
