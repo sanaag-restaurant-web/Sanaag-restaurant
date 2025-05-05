@@ -150,7 +150,49 @@ input.invalid, textarea.invalid {
   border: 2px solid red;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-image {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .contact-image {
+    order: -1;
+    height: 200px;
+  }
+
+  .contact-image img {
+    border-left: none;
+    border-top: 1px solid #eee;
+  }
+
+  .contact-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
 }
 
